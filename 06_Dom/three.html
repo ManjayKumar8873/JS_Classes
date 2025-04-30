@@ -6,17 +6,49 @@
     <title>Document</title>
 </head>
 <body style="background-color: #212121; color: #fff;">
+
     <ul class="language">
-        <li>JavaScript</li>
+        <li>Javacript</li>
     </ul>
+    
 </body>
 <script>
-    function addLanguage(langName){
-    const mi = document.createElement('li');
-    mi.textContent = langName;
-    document.querySelector('.language').appendChild(mi);
+    function addLanguage (langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
     }
     addLanguage("Java")
-    addLanguage("Python") 
+    addLanguage("Python")
+    addLanguage("HTML")
+
+    //  +++++++ OR +++++++
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+   addOptiLanguage("Ruby")
+
+//  Edit +++++++++
+
+const secondLang = document.querySelector("li:nth-child(2)")
+
+// secondLang.innerHTML = "manjay"
+    // ++++ OR +++++
+const newli = document.createElement('li')
+newli.textContent = "Manjay"
+secondLang.replaceWith(newli)
+
+// edit
+const firstLang = document.querySelector("li:first-child")
+firstLang.outerHTML = '<li> TypesScript</li> '
+ 
+// remove
+
+ const lastLang = document.querySelector("li:last-child")
+lastLang.remove() 
+
 </script>
-</html>
+</html> 
