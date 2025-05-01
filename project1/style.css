@@ -1,0 +1,52 @@
+html{
+    margin: 0;
+}
+
+.navbar {
+    background-color: #b3b0b0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 16px;
+}
+
+.navbar a:hover{
+    background-color: black;
+}
+
+span {
+    display: block;
+}
+
+.canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+
+}
+
+.button {
+    height: 100px;
+    width: 100px;
+    border: solid black 2px;
+    display: inline-block;
+}
+
+#grey {
+    background: gray;
+}
+
+#blue {
+    background: blue;
+}
+
+#yellow {
+    background: yellow;
+}
+
