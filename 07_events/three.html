@@ -15,17 +15,16 @@
         console.log("Manjay", new Date());
         
     }
-    // const end = setInterval(sayDate, 1000);
-    // clearInterval(sayDate)
-
-    // const endMe = clearInterval(end) 
-    document.querySelector('#start').addEventListener('click', function(){
-    const endInterval = setInterval(sayDate, 2000)
     
-    document.querySelector('#stop').addEventListener('click', function(){
-        clearInterval(endInterval)
-        console.log("stopped"); 
+    let intervalId;
+    document.querySelector('#start').addEventListener('click', function(){
+    intervalId = setInterval(sayDate, 2000)
+
     })
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalId)
+        console.log("stopped"); 
     })
 
 
